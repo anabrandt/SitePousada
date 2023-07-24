@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .footer_contato{
+            background:#C083B9;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #C083B9;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #9F5DAE;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar_logotipo">
+                <img src="img/logo-white.png" alt="Logotipo M de Maravilhosa">
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- barra de navegacao -->
+    <nav>
+        <ul>
+            <li><a href="inicial.html">Pagina Inicial</a></li>
+            <li><a href="acomodacoes.html">Acomodacoes</a></li>
+            <li><a href="servicos.html">Servico</a></li>
+            <li><a href="fotos.html">Fotos e Videos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+        <!-- Cabeçalho -->
+
+
+        <header >
+            <div class="container_header">
+                <div >
+                    <h1>Cadastro na Pousada</h1>
+                </div>
+            </div>               
+        </header>
+        
+        <!-- Formulário de Cadastro -->
+        <section class="cadastro">
+            <form action="processar.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer_contato">
+        <div class="footer__menu">
+            <ul class="footer__links">
+                <li>
+                    <a href="inicial.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://blacklivesmatter.com/" target="_blank">Conheça nossa organização </a>
+                </li>
+            </ul>
+
+            <img src="img/logo-white.png" alt="">
+
+        
+        </div>
+        <div class="footer_cc">
+            <p>M de Maravilhosa 2023 | Feito com amor </p>
+        </div>
+    </footer>
+
+</body>
+</html>
